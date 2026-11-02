@@ -73,4 +73,3 @@ python simulator.py
 ```
 
 Follow the prompts to enter your simulation parameters. The program will print the calculated results and generate the visualization files.
-```
