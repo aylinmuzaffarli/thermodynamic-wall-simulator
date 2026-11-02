@@ -13,17 +13,17 @@ A Python-based simulator comparing a Landauer-based theoretical energy limit wit
 
 - **Theoretical Minimum Energy vs. Estimated Energy Consumption:** Theoretical minimum energy required vs. estimated silicon energy consumption.
 
-- **Thermal Wall Scaling:** Air-cooling limits vs. cluster scaling, showing at what server scale the cooling system can no longer keep up with heat dissipation.
+- **Thermal Wall Scaling:** Compares modeled power dissipation per server against a configurable cooling threshold as the number of servers increases.
 
 ---
 
 ## Mathematics and Physics Foundation
 
-1. **Landauer’s Principle:** Calculates the theoretical minimum energy associated with the irreversible erasure of one bit of information.
+1. **Landauer’s Principle:** Calculates the theoretical minimum energy associated with the irreversible erasure of one bit of information. In this simulator, the number of operations serves as a simplified proxy for the number of bit erasures.
 
 2. **Estimated Energy Consumption:** Calculated by multiplying the Landauer-based energy reference by the user-defined energy overhead multiplier ((G)). This represents an assumed gap between the theoretical limit and estimated energy consumption, not a measured universal property of CMOS transistors.
 
-3. **The Thermal Wall & Cooling Limit:** Calculates the server count at which the modeled power per server reaches the specified cooling threshold. Total power is divided by the cooling limit per server to obtain this threshold.
+3. **The Thermal Wall & Cooling Limit:** Calculates the server count at which the modeled power per server reaches the specified cooling threshold. The total modeled power is divided by the cooling limit per server to calculate the critical server count.
 
 ---
 
@@ -46,8 +46,6 @@ A Python-based simulator comparing a Landauer-based theoretical energy limit wit
 - **Output and Visualization:** Prints the results and generates two graphs.
 
 ---
-
-## Example Results
 
 ## Example Results
 
