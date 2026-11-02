@@ -1,6 +1,4 @@
-# Title and Abstract
-
-### The Thermodynamic Wall: Modeling the Fundamental Limits of Information Processing and Silicon Dissipation
+# The Thermodynamic Wall: Modeling the Fundamental Limits of Information Processing and Silicon Dissipation
 
 A Python-based simulator comparing a Landauer-based theoretical energy limit with an estimated energy cost, then evaluating the resulting power demand against a per-server cooling threshold.
 
@@ -19,17 +17,17 @@ A Python-based simulator comparing a Landauer-based theoretical energy limit wit
 
 ---
 
-# Mathematics and Physics Foundation
+## Mathematics and Physics Foundation
 
 1. **Landauer’s Principle:** Calculates the theoretical minimum energy associated with the irreversible erasure of one bit of information.
 
-2. **Actual Spent Energy:** Calculated by multiplying the Landauer-based energy reference by the user-defined energy overhead multiplier ((G)). This represents an assumed gap between the theoretical limit and estimated energy consumption, not a measured universal property of CMOS transistors.
+2. **Estimated Energy Consumption:** Calculated by multiplying the Landauer-based energy reference by the user-defined energy overhead multiplier ((G)). This represents an assumed gap between the theoretical limit and estimated energy consumption, not a measured universal property of CMOS transistors.
 
 3. **The Thermal Wall & Cooling Limit:** Calculates the server count at which the modeled power per server reaches the specified cooling threshold. Total power is divided by the cooling limit per server to obtain this threshold.
 
 ---
 
-# Simulation Methodology and Architecture
+## Simulation Methodology and Architecture
 
 - **Input:** Prompts the user for customizable simulation parameters.
 
@@ -41,15 +39,17 @@ A Python-based simulator comparing a Landauer-based theoretical energy limit wit
 
 ---
 
-# Example Results
+## Example Results
 
-example.png
-plots/landauer_vs_actual.png
-plots/thermal_wall.png
+![Terminal Output](example.png)
+
+![Landauer vs. Estimated Energy](plots/landauer_vs_actual.png)
+
+![Thermal Wall Scaling](plots/thermal_wall.png)
 
 ---
 
-# How to Run
+## How to Run
 
 ### 1. Clone the Repository
 
