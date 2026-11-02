@@ -27,6 +27,14 @@ A Python-based simulator comparing a Landauer-based theoretical energy limit wit
 
 ---
 
+### Model Assumptions
+
+- **Execution Time:** The modeled workload is assumed to take 1 second to complete. Total power is calculated by dividing the estimated energy consumption by this duration.
+- **Energy Overhead:** The multiplier (G) represents a user-defined energy overhead relative to the Landauer-based theoretical reference.
+- **Cooling Capacity:** The cooling threshold represents a configurable maximum power dissipation per server.
+
+---
+
 ## Simulation Methodology and Architecture
 
 - **Input:** Prompts the user for customizable simulation parameters.
@@ -41,9 +49,17 @@ A Python-based simulator comparing a Landauer-based theoretical energy limit wit
 
 ## Example Results
 
+## Example Results
+
+### Terminal Output
+
 ![Terminal Output](example.png)
 
+### Theoretical Minimum Energy vs. Estimated Energy Consumption
+
 ![Landauer vs. Estimated Energy](plots/landauer_vs_actual.png)
+
+### Thermal Wall Scaling
 
 ![Thermal Wall Scaling](plots/thermal_wall.png)
 
