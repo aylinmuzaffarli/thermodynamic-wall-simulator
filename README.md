@@ -1,4 +1,4 @@
-# Section 1: Title and Abstract
+# Title and Abstract
 
 ### The Thermodynamic Wall: Modeling the Fundamental Limits of Information Processing and Silicon Dissipation
 
@@ -9,19 +9,17 @@ A Python-based simulator comparing a Landauer-based theoretical energy limit wit
 - **Landauer Minimum Energy**
 - **Estimated Energy Consumption**
 - **Total Cluster Power**
-- **Critical Servers for Thermal Wall**
+- **Critical Server Threshold**
 
-**2 Graphs:**
+**The simulator generates two graphs:**
 
-1. **Theoretical Minimum Energy vs. Estimated Energy Consumption:** Theoretical minimum energy required vs. real-world silicon energy consumption.
+- **Theoretical Minimum Energy vs. Estimated Energy Consumption:** Theoretical minimum energy required vs. estimated silicon energy consumption.
 
-2. **Thermal Wall Scaling:** Air-cooling limits vs. cluster scaling, showing at what server scale the cooling system can no longer keep up with heat dissipation.
+- **Thermal Wall Scaling:** Air-cooling limits vs. cluster scaling, showing at what server scale the cooling system can no longer keep up with heat dissipation.
 
 ---
 
 # Mathematics and Physics Foundation
-
-### Text Results:
 
 1. **Landauer’s Principle:** Calculates the theoretical minimum energy associated with the irreversible erasure of one bit of information.
 
@@ -45,7 +43,9 @@ A Python-based simulator comparing a Landauer-based theoretical energy limit wit
 
 # Example Results
 
-[files put there]
+example.png
+plots/landauer_vs_actual.png
+plots/thermal_wall.png
 
 ---
 
